@@ -22,17 +22,17 @@ const port = process.env.PORT || 3000;
 //   }
 // });
 
-async function connectToMongo() {
-  try {
-    await database.connect();
-    console.log("Successfully connected to MongoDB");
-  } catch (ex) {
-    console.log("Error connecting to MongoDB");
-    console.log(ex);
-  }
-}
+// async function connectToMongo() {
+//   try {
+//     await database.connect();
+//     console.log("Successfully connected to MongoDB");
+//   } catch (ex) {
+//     console.log("Error connecting to MongoDB");
+//     console.log(ex);
+//   }
+// }
 
-connectToMongo();
+// connectToMongo();
 
 const app = express();
 app.set("view engine", "ejs");
